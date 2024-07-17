@@ -46,7 +46,7 @@ function Home() {
                 </p>
                 <div className="mt-10 mb-20 flex items-center justify-start gap-x-6">
                   <Link
-                    className="text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    className="hover:bg-white text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                     href={"#"}
                   >
                     Join our Community
@@ -363,7 +363,7 @@ function Home() {
                 price increases at the time of delivery. 
               </p>
               <Link
-                className="text-black flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                className="text-black hover:bg-white flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                 href={"#"}
               >
                 <svg
@@ -884,7 +884,7 @@ function Home() {
               Transferable,Tradable and Verifiable before it expires.
             </p>
             <Link
-              className="text-black mx-auto mt-8 flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+              className="text-black hover:bg-white mx-auto mt-8 flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
               href={"#"}
             >
               Join our Community
@@ -972,7 +972,7 @@ function Home() {
                     </h6>
                   </div>
                   <div
-                    className="text-black flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    className="text-black hover:bg-white flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                     href={"#"}
                   >
                     Buy Now
@@ -1022,7 +1022,7 @@ function Home() {
                     </h6>
                   </div>
                   <div
-                    className="text-black flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    className="text-black hover:bg-white flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                     href={"#"}
                   >
                     Buy Now
@@ -1072,7 +1072,7 @@ function Home() {
                     </h6>
                   </div>
                   <div
-                    className="text-black flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    className="text-black hover:bg-white flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                     href={"#"}
                   >
                     Buy Now

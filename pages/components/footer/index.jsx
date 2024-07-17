@@ -55,7 +55,7 @@ function Footer() {
                         </clipPath>
                       </defs>
                     </svg>
-                    Join Discord{" "}
+                    Join Discord
                     <svg
                       className="ml-2"
                       width="20"

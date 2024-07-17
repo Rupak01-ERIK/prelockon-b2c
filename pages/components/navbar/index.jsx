@@ -132,7 +132,7 @@ function Navbar() {
                   </Link>
                   <Link
                     href={"#"}
-                    className="flex items-center font-normal text-white hover:text-white text-base hover:underline"
+                    className="flex hover:bg-white items-center font-normal text-white hover:text-white text-base hover:underline"
                   >
                     <svg
                       className="me-2"

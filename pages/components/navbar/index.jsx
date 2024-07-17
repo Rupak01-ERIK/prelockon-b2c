@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`fixed d-none top-0 w-full z-50 p-4 duration-300 ${scrolled ? "fixed-top" : "fixed top-0 w-full z-50 p-4 duration-300"}`}>
+        className={`fixed hidden top-0 w-full z-50 p-4 duration-300 ${scrolled ? "fixed-top" : "fixed top-0 w-full z-50 p-4 duration-300"}`}>
         <img
           className={`${
             scrolled

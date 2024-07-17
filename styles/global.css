@@ -170,3 +170,9 @@ nav .bg-navbar-1 {
   top: 25%;
 }
 /* welcome-banner-gif */
+
+@media (min-width: 1920px) {
+  .max-w-7xl {
+    max-width: 80% !important;
+  }
+}

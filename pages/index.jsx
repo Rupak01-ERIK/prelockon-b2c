@@ -172,10 +172,10 @@ function Home() {
                   />
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-normal text-white">
+              <dt className="font-700 mb-1 text-base text-sm leading-normal text-white">
                 Early Access to Exclusive Product and Service
               </dt>
-              <p className="leading-normal font-normal font-400">
+              <p className="leading-normal text-sm font-normal font-400">
                 Gain early access to unique and limited-time products and
                 services before they become widely available. 
               </p>
@@ -199,10 +199,10 @@ function Home() {
                   />
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-normal text-white">
+              <dt className="font-700 mb-1 text-base text-sm leading-normal text-white">
                 Verifiable Proof of Ownership & Combat Counterfeiting
               </dt>
-              <p className="leading-normal font-normal font-400">
+              <p className="leading-normal font-normal text-sm font-400">
                 Ensure authenticity with verifiable proof of ownership using
                 blockchain technology.
               </p>
@@ -245,10 +245,10 @@ function Home() {
                   </defs>
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-normal text-white">
+              <dt className="font-700 mb-1 text-base text-sm leading-normal text-white">
                 Trade in Secondary Marketplace for Consumer
               </dt>
-              <p className="leading-normal font-normal font-400">
+              <p className="leading-normal font-normal text-sm font-400">
                 Participate in a secondary marketplace where you can resell your
                 preorders with confidence anytime.
               </p>
@@ -303,10 +303,10 @@ function Home() {
                   </defs>
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-normal text-white">
+              <dt className="font-700 mb-1 text-base leading-normal text-sm text-white">
                 Future Proof of Purchase
               </dt>
-              <p className="leading-normal font-normal font-400">
+              <p className="leading-normal font-normal text-sm font-400">
                 Lock in prices at the time of purchase to protect against future
                 price increases at the time of delivery. 
               </p>

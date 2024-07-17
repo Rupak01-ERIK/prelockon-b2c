@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/index";
 import Footer from "./components/footer/index";
 import Head from "next/head";
 import Link from "next/link";
-import Button from "./components/buttons/buttons";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 function Home() {
   return (
@@ -905,7 +905,7 @@ function Home() {
             Verifiable before it expires.
           </p>
         </div>
-        <div className="flex md:flex-row flex-col p-8 justify-center overflow-hidden relative mx-auto max-w-7xl">
+        <div className="flex items-center md:flex-row flex-col p-8 justify-center overflow-hidden relative mx-auto max-w-7xl">
           <img
             className="pointer-events-none absolute md:block hidden top-0 opacity-10 h-full	w-full"
             src="./expires-banner.png"
@@ -915,7 +915,13 @@ function Home() {
             <img src="./early-booking-banner.png" alt="" />
           </Link> */}
           <div className="mr-8 md:w-2/5 w-full md:mb-0 mb-6">
-            <img src="./preorder-image.png" height={"100%"} width={"100%"} className="object-contain" alt="" />
+            <img
+              src="./preorder-image.png"
+              height={"100%"}
+              width={"100%"}
+              className="object-contain"
+              alt=""
+            />
           </div>
           <div className="text-start md:w-3/5 w-full md:p-0 p-4">
             <h4 className="text-2xl	text-white font-700 mb-8">
@@ -945,7 +951,7 @@ function Home() {
                 </div>
               </div>
               <div className="md:w-1/2 w-full py-2 px-5 sold-by-wrapper">
-                <div className="flex justify-between top-figure-wrapper">
+                <div className="flex mb-3 justify-between top-figure-wrapper">
                   <div className="left-numbers">
                     <h6 className="text-primary-color">100</h6>
                     <span className="text-white font-400 text-xs">
@@ -958,6 +964,15 @@ function Home() {
                       Available Unit
                     </span>
                   </div>
+                </div>
+                <div className="progress-wrapper">
+                  <ProgressBar
+                    completed={60}
+                    className="wrapper"
+                    barContainerClassName="container"
+                    completedClassName="barCompleted"
+                    labelClassName="label"
+                  />
                 </div>
               </div>
             </div>

@@ -39,7 +39,6 @@ body {
   font-family: "font-700";
 }
 /* CUSTOME FONT CLASS */
-
 h1,
 h2,
 h3,
@@ -53,6 +52,28 @@ p {
   font-family: "font-400";
   color: #d1d2d4;
 }
+
+/* progress wrapper */
+.progress-wrapper .wrapper {
+  border-radius: 50px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.progress-wrapper .container {
+  background-color: #ffffff38;
+}
+
+.progress-wrapper .barCompleted {
+  background-color: #06FACE;
+  width: 80%;
+}
+
+.progress-wrapper .label {
+  font-size: 20px;
+  color: green;
+}
+/* progress wrapper */
 
 /* NAV FIXED STYLING */
 @media (max-width: 768px) {

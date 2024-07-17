@@ -569,14 +569,23 @@ function Home() {
       {/* VIDEO SECTION */}
       <section className="pb-20 bg-section-background-color video-section-wrapper">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <video width="100%" height="100%" controls preload="none">
-            <source src="https://youtu.be/EngW7tLk6R8" type="video/mp4" />
+          <video
+            width="100%"
+            height="100%"
+            controls
+            preload="none"
+            autoPlay
+            muted
+            playsInline
+          >
+            <source src="./video.mp4" type="video/mp4" />
             <track
               src="/path/to/captions.vtt"
               kind="subtitles"
               srcLang="en"
               label="English"
             />
+            Your browser does not support the video tag.
           </video>
         </div>
       </section>
@@ -955,7 +964,7 @@ function Home() {
                     </p>
                   </div>
                   <div className="mb-5 price-wrapper">
-                    <h6 className="text-start text-white text-sm">
+                    <h6 className="font-400 text-start text-white text-sm">
                       Price:{" "}
                       <span className="text-primary-color font-semibold text-xl">
                         $1100
@@ -980,7 +989,7 @@ function Home() {
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
                   </div>
-                  <img src="./trade-image.png" alt="" />
+                  <img src="./vision-pro.png" alt="" />
                 </div>
                 <div className="p-5 relative title-wrapper">
                   <img
@@ -994,18 +1003,18 @@ function Home() {
                     </div>
                     <div className="right-title-wrapper">
                       <h4 className="text-white font-bold text-xl">
-                        Iphone 17 Pro Max
+                        Apple Vision Pro 2026
                       </h4>
                     </div>
                   </div>
                   <div className="mb-5 description">
                     <p className="text-start text-white text-sm	">
-                      Iphone 17 pro max in our platform will be transferable,
-                      tradable and verifiable before it expires.
+                      The ultimate mixed-reality headset for a new era of
+                      immersive experiences.
                     </p>
                   </div>
                   <div className="mb-5 price-wrapper">
-                    <h6 className="text-start text-white text-sm">
+                    <h6 className="font-400 text-start text-white text-sm">
                       Price:{" "}
                       <span className="text-primary-color font-semibold text-xl">
                         $1100
@@ -1030,7 +1039,7 @@ function Home() {
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
                   </div>
-                  <img src="./trade-image.png" alt="" />
+                  <img src="./samsung-device.png" alt="" />
                 </div>
                 <div className="p-5 relative title-wrapper">
                   <img
@@ -1040,22 +1049,22 @@ function Home() {
                   />
                   <div className="flex mb-5 mt-margin-minus-40 items-end">
                     <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./apple-logo.png" alt="" />
+                      <img src="./samsung.png" alt="" />
                     </div>
                     <div className="right-title-wrapper">
                       <h4 className="text-white font-bold text-xl">
-                        Iphone 17 Pro Max
+                        Samsung S26 Ultra
                       </h4>
                     </div>
                   </div>
                   <div className="mb-5 description">
                     <p className="text-start text-white text-sm	">
-                      Iphone 17 pro max in our platform will be transferable,
-                      tradable and verifiable before it expires.
+                      The flagship smartphone with cutting-edge performance and
+                      stunning design.
                     </p>
                   </div>
                   <div className="mb-5 price-wrapper">
-                    <h6 className="text-start text-white text-sm">
+                    <h6 className="font-400 text-start text-white text-sm">
                       Price:{" "}
                       <span className="text-primary-color font-semibold text-xl">
                         $1100

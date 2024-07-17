@@ -905,15 +905,104 @@ function Home() {
             Verifiable before it expires.
           </p>
         </div>
-        <div className="flex justify-center overflow-hidden relative mx-auto text-center max-w-7xl">
+        <div className="flex md:flex-row flex-col p-8 justify-center overflow-hidden relative mx-auto max-w-7xl">
           <img
-            className="pointer-events-none absolute top-0 opacity-10 h-full	w-full"
+            className="pointer-events-none absolute md:block hidden top-0 opacity-10 h-full	w-full"
             src="./expires-banner.png"
             alt=""
           />
-          <Link href={"#"} className="relative">
+          {/* <Link href={"#"} className="relative">
             <img src="./early-booking-banner.png" alt="" />
-          </Link>
+          </Link> */}
+          <div className="mr-8 md:w-2/5 w-full md:mb-0 mb-6">
+            <img src="./preorder-image.png" height={"100%"} width={"100%"} className="object-contain" alt="" />
+          </div>
+          <div className="text-start md:w-3/5 w-full md:p-0 p-4">
+            <h4 className="text-2xl	text-white font-700 mb-8">
+              Iphone 17 Pro Max
+            </h4>
+            <div className="flex md:flex-row flex-col border-custome-2 pb-6 mb-6 justify-between sold-section">
+              <div className="md:w-1/2 w-full back-ground-type-one w-fit py-2 px-5 sold-by-wrapper">
+                <span className="text-white font-normal text-xs mb-2">
+                  Sold By
+                </span>
+                <div className="flex items-center">
+                  <div className="me-3 image-wrapper">
+                    <img
+                      height={"100%"}
+                      width={"32px"}
+                      className="object-contain"
+                      src="./sold-by.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="right-content-wrapper">
+                    <h6 className="text-white text-base mb-1">Apple Inc.</h6>
+                    <p className="text-white text-xs font-normal font-400">
+                      KYC(verified) Team(Public) Address(Public)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-1/2 w-full py-2 px-5 sold-by-wrapper">
+                <div className="flex justify-between top-figure-wrapper">
+                  <div className="left-numbers">
+                    <h6 className="text-primary-color">100</h6>
+                    <span className="text-white font-400 text-xs">
+                      Sold Unit
+                    </span>
+                  </div>
+                  <div className="right-numbers">
+                    <h6 className="text-primary-color">50</h6>
+                    <span className="text-white font-400 text-xs">
+                      Available Unit
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mb-8 info-section">
+              <p className="font-normal text-sm	font-400">
+                Softcap : 25 unit
+                <br /> Penalty on Late Shipping : 10% in coupon
+                <br />
+                Royalty on Resale : 7%
+                <br /> Exit Claim : $250
+              </p>
+            </div>
+            <div className="flex justify-between items-center md:flex-row flex-col card-bottom-section">
+              <div className="md:w-1/4 w-full">
+                <Link
+                  className="hover:bg-white flex w-fit text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                  href={"#"}
+                >
+                  Preorder Now
+                </Link>
+              </div>
+              <div className="md:w-3/4 w-full">
+                <div className="flex justify-end md:flex-row flex-col">
+                  <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
+                    <h5 className="text-primary-color font-medium text-xl">
+                      $1100
+                    </h5>
+                    <p className="font-400 text-sm">Preorder Price</p>
+                  </div>
+                  <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
+                    <h5 className="text-primary-color font-medium text-xl">
+                      $1200
+                    </h5>
+                    <p className="font-400 text-sm">Market Price</p>
+                  </div>
+                  <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
+                    <h5 className="text-primary-color font-medium text-xl">
+                      10 October 2025
+                    </h5>
+                    <p className="font-400 text-sm">Ready to Ship</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="mt-20 flex justify-center border-custome overflow-hidden relative mx-auto text-center max-w-7xl"></div>
       </section>
@@ -941,7 +1030,7 @@ function Home() {
                   </div>
                   <img src="./trade-image.png" alt="" />
                 </div>
-                <div className="p-5 relative title-wrapper">
+                <div className="p-5 relative title-wrapper h-full">
                   <img
                     className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                     src="./expires-banner.png"
@@ -991,7 +1080,7 @@ function Home() {
                   </div>
                   <img src="./vision-pro.png" alt="" />
                 </div>
-                <div className="p-5 relative title-wrapper">
+                <div className="p-5 relative title-wrapper h-full">
                   <img
                     className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                     src="./expires-banner.png"
@@ -1041,7 +1130,7 @@ function Home() {
                   </div>
                   <img src="./samsung-device.png" alt="" />
                 </div>
-                <div className="p-5 relative title-wrapper">
+                <div className="p-5 relative title-wrapper h-full">
                   <img
                     className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                     src="./expires-banner.png"

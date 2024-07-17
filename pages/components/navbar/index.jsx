@@ -114,7 +114,7 @@ function Navbar() {
                       height="44"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#ff4500"
+                      stroke="#06FACE"
                       fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -126,13 +126,13 @@ function Navbar() {
                   </div>
                   <Link
                     href="/product"
-                    className="font-normal text-white hover:text-whitfontOutfit text-base hover:underline"
+                    className="font-normal text-white hover:text-white fontOutfit text-base hover:underline"
                   >
                     Roadmap
                   </Link>
                   <Link
                     href={"#"}
-                    className="flex hover:bg-white items-center font-normal text-white hover:text-white text-base hover:underline"
+                    className="flex items-center font-normal text-white hover:text-white text-base hover:underline"
                   >
                     <svg
                       className="me-2"

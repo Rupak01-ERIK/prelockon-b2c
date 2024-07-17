@@ -88,6 +88,11 @@ p {
   margin: 0 !important;
 }
 
+.back-ground-type-one {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 nav.fixed-top {
   background: #1b2027;
   padding: 0;
@@ -142,6 +147,18 @@ nav .bg-navbar-1 {
 .border-custome {
   opacity: 0.1;
   border-bottom: 1px solid#fff;
+}
+
+.border-right-custom {
+  border-right: 1px solid #3b4149;
+}
+
+.border-right-custom:last-child {
+  border-right: unset;
+}
+
+.border-custome-2 {
+  border-bottom: 1px solid#31363c;
 }
 /* CUTOME BORDER */
 

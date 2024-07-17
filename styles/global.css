@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+@font-face {
+  font-family: "font-400";
+  src: url("../fonts/SFPRODISPLAYREGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-500";
+  src: url("../fonts/SFPRODISPLAYMEDIUM.OTF");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-700";
+  src: url("../fonts/SFPRODISPLAYBOLD.OTF");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "font-400";
+}
+
+/* CUSTOME FONT CLASS */
+.font-400{
+  font-family: 'font-400';
+}
+
+.font-500{
+  font-family: 'font-500';
+}
+
+.font-700{
+  font-family: 'font-700';
+}
+/* CUSTOME FONT CLASS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "font-700";
+}
+
+p {
+  font-family: "font-400";
+  color: #d1d2d4;
+}
+
+/* NAV FIXED STYLING */
+nav.fixed-top {
+  background: #1b2027;
+  padding: 0;
+}
+
+nav.fixed-top .bg-navbar-1 {
+  background-color: unset;
+  border: none;
+}
+
+nav .bg-navbar-1 {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* NAV FIXED STYLING */
+
+/* HERO SECTION */
+.heroSection {
+  padding: 0 0 5rem 0;
+}
+
+.heroSection h1 {
+  font-family: "font-400";
+}
+
+.heroSection h1 span {
+  font-family: "font-700";
+}
+/* HERO SECTION */
+
+/* CUTOME TEXT TYPE ONE */
+.customize-text-one {
+  color: #fff;
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "font-700";
+  font-size: 52px;
+  font-weight: 700;
+  opacity: 0.1;
+  display: block;
+}
+/* CUTOME TEXT TYPE ONE */
+
+/* CUTOME BORDER */
+.border-custome {
+  opacity: 0.1;
+  border-bottom: 1px solid#fff;
+}
+/* CUTOME BORDER */
+
+/* unlocking-section */
+.unlocking-section .inner-card-wrapper {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #ffffff39;
+}
+
+.unlocking-section .inner-card-wrapper:hover {
+  box-shadow: rgba(56, 240, 157, 0.2) 0px 7px 29px 0px;
+}
+/* unlocking-section */

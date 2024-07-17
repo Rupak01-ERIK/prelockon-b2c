@@ -126,13 +126,13 @@ function Navbar() {
                   </div>
                   <Link
                     href="/product"
-                    className="font-normal text-white hover:text-whitfontOutfit text-base"
+                    className="font-normal text-white hover:text-whitfontOutfit text-base hover:underline"
                   >
                     Roadmap
                   </Link>
                   <Link
                     href={"#"}
-                    className="flex items-center font-normal text-white hover:text-white text-base"
+                    className="flex items-center font-normal text-white hover:text-white text-base hover:underline"
                   >
                     <svg
                       className="me-2"

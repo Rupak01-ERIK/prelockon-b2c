@@ -14,7 +14,7 @@ function Footer() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="md:flex gap-8 mb-12">
             <div className="md:w-3/4 w-full">
-              <h6 className="text-white text-xl font-bold mb-3">
+              <h6 className="text-white text-lg font-bold mb-3">
                 We are safeguarding consumers while empowering entrepreneurs,
                 producers and creators. Every preorder in our platform will be
                 Transferable,Tradable and Verifiable before it expires.
@@ -26,14 +26,14 @@ function Footer() {
             <div className="md:w-1/4 w-full">
               <ul className="text-right">
                 <li className="mb-3">
-                  <Link href={"#"} className="font-normal text-white text-sm">
+                  <Link href={"#"} className="font-normal text-white text-sm hover:underline">
                     Roadmap
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link
                     href={"#"}
-                    className="font-normal text-white text-sm flex justify-end"
+                    className="font-normal text-white text-sm flex justify-end hover:underline"
                   >
                     <svg
                       className="me-2"
@@ -76,12 +76,12 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="mb-3">
-                  <Link href={"#"} className="font-normal text-white text-sm">
+                  <Link href={"#"} className="font-normal text-white text-sm hover:underline">
                     Request Early Access
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#"} className="font-normal text-white text-sm">
+                  <Link href={"#"} className="font-normal text-white text-sm hover:underline">
                     Privacy Policy
                   </Link>
                 </li>

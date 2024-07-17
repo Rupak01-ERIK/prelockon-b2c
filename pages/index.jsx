@@ -28,22 +28,29 @@ function Home() {
         />
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div className="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
-            <dl className="grid grid-cols-1 gap-8 md:mt-20 md:grid-cols-2">
+            {/* <dl className="grid grid-cols-1 gap-8 md:mt-20 md:grid-cols-2"> */}
+            <dl className="flex md:w-4/6 w-full md:mt-44">
               <div className="text-start">
                 <div className="relative w-fit mb-3 bg-navbar-1 font-normal rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   All preorders are tokenized on-chain
                 </div>
                 <h1 className="text-4xl tracking-tight text-white sm:text-6xl">
-                  <span>Save Early</span> and <span>Worry Less</span> with
-                  PreLockon
+                  <span>Save Early</span> and <span>Worry Less</span>
+                  <br /> with PreLockon
                 </h1>
-                <p className="mt-6 text-base leading-8 text-white">
+                <p className="mt-6 text-base leading-8 leading-normal">
                   We are safeguarding consumers while empowering entrepreneurs,
-                  producers and creators. Every preorder in our platform will be
-                  Transferable,Tradable and Verifiable before it expires.
+                  producers and creators. Every
+                  <br /> preorder in our platform will be Transferable,Tradable
+                  and Verifiable before it expires.
                 </p>
                 <div className="mt-10 mb-20 flex items-center justify-start gap-x-6">
-                  <Button />
+                  <Link
+                    className="text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    href={"#"}
+                  >
+                    Join our Community
+                  </Link>
                 </div>
                 <div className="hero-list-wrapper">
                   <ul className="flex flex-wrap">
@@ -135,7 +142,7 @@ function Home() {
             <h2 className="mb-4 font-bold text-3xl tracking-tight text-white">
               Unlocking Innovation and Ensuring Security
             </h2>
-            <p className="text-sm leading-8 text-white">
+            <p className="text-sm leading-normal">
               Explore our unique selling points that empower creators with early
               access and secure trading, while safeguarding consumers with
               verified ownership and counterfeit protection.
@@ -165,10 +172,10 @@ function Home() {
                   />
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-7 text-white">
+              <dt className="font-700 mb-1 text-base leading-normal text-white">
                 Early Access to Exclusive Product and Service
               </dt>
-              <p className="text-white">
+              <p className="leading-normal font-normal font-400">
                 Gain early access to unique and limited-time products and
                 services before they become widely available. 
               </p>
@@ -192,10 +199,10 @@ function Home() {
                   />
                 </svg>
               </dd>
-              <dt className="font-700 mb-1 text-base leading-7 text-white">
+              <dt className="font-700 mb-1 text-base leading-normal text-white">
                 Verifiable Proof of Ownership & Combat Counterfeiting
               </dt>
-              <p className="text-white">
+              <p className="leading-normal font-normal font-400">
                 Ensure authenticity with verifiable proof of ownership using
                 blockchain technology.
               </p>
@@ -238,10 +245,10 @@ function Home() {
                   </defs>
                 </svg>
               </dd>
-              <dt className="font-bold mb-1 text-base leading-7 text-white">
+              <dt className="font-700 mb-1 text-base leading-normal text-white">
                 Trade in Secondary Marketplace for Consumer
               </dt>
-              <p className="text-white">
+              <p className="leading-normal font-normal font-400">
                 Participate in a secondary marketplace where you can resell your
                 preorders with confidence anytime.
               </p>
@@ -296,10 +303,10 @@ function Home() {
                   </defs>
                 </svg>
               </dd>
-              <dt className="font-bold mb-1 text-base leading-7 text-white">
+              <dt className="font-700 mb-1 text-base leading-normal text-white">
                 Future Proof of Purchase
               </dt>
-              <p className="text-white">
+              <p className="leading-normal font-normal font-400">
                 Lock in prices at the time of purchase to protect against future
                 price increases at the time of delivery. 
               </p>
@@ -351,7 +358,7 @@ function Home() {
                 How Prelockon Works: Simple and
                 <br /> Secure Steps
               </h4>
-              <p className="text-white mb-8">
+              <p className="mb-8">
                 Lock in prices at the time of purchase to protect against future
                 price increases at the time of delivery. 
               </p>
@@ -405,10 +412,10 @@ function Home() {
                     <span className="customize-text-one">1</span>
                   </div>
                   <div className="right-content-wrapper">
-                    <h3 className="text-white text-xl font-semibold	mb-2">
+                    <h3 className="text-white text-lg font-semibold	mb-1">
                       User Signup
                     </h3>
-                    <p className="text-white font-light text-sm">
+                    <p className="font-light text-sm">
                       Register with your wallet or email, Setup your profile. 
                     </p>
                   </div>
@@ -450,10 +457,10 @@ function Home() {
                     <span className="customize-text-one">2</span>
                   </div>
                   <div className="right-content-wrapper">
-                    <h3 className="text-white text-xl font-semibold	mb-2">
+                    <h3 className="text-white text-lg font-semibold	mb-1">
                       Explore and Select
                     </h3>
-                    <p className="text-white font-light text-sm">
+                    <p className="font-light text-sm">
                       You can browse the different projects listed on the
                       platform, choose what is best for you on the basis of what
                       you like to experience or make profit on resale. 
@@ -497,10 +504,10 @@ function Home() {
                     <span className="customize-text-one">3</span>
                   </div>
                   <div className="right-content-wrapper">
-                    <h3 className="text-white text-xl font-semibold	mb-2">
+                    <h3 className="text-white text-lg font-semibold	mb-1">
                       Book and Engage
                     </h3>
-                    <p className="text-white font-light text-sm">
+                    <p className="font-light text-sm">
                       You can book your preorder, ask question, Monitor what is
                       happening onchain. 
                     </p>
@@ -543,10 +550,10 @@ function Home() {
                     <span className="customize-text-one">4</span>
                   </div>
                   <div className="right-content-wrapper">
-                    <h3 className="text-white text-xl font-semibold	mb-2">
+                    <h3 className="text-white text-lg font-semibold	mb-1">
                       Trade before Expire
                     </h3>
-                    <p className="text-white font-light text-sm">
+                    <p className="font-light text-sm">
                       You have an opportunity to sell and make profit from your
                       preorder before it expires. 
                     </p>
@@ -583,20 +590,20 @@ function Home() {
               Secures validation, revenue, early feedback, and financial
               accountability
             </h4>
-            <p className="text-white text-center font-normal text-base">
+            <p className="text-center font-normal text-base">
               Every preorder in our platform will be Transferable,Tradable and
               Verifiable before it expires.
             </p>
           </div>
           <div className="w-full table-inner-wrapper">
             <div className="flex mb-6 justify-between text-center table-heading-wrapper">
-              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase flex justify-center">
+              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
                 Description
               </div>
-              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase flex justify-center">
+              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
                 Traditional Platform
               </div>
-              <div className="w-full text-sm py-3 text-black bg-primary-color uppercase flex justify-center">
+              <div className="w-full text-sm py-3 text-black bg-primary-color uppercase items-center flex justify-center">
                 PreLockon
               </div>
             </div>
@@ -862,7 +869,7 @@ function Home() {
             <h4 className="text-xxl mb-4 font-bold text-white">
               Users can trade and transfer before it expires
             </h4>
-            <p className="text-white font-normal text-base">
+            <p className="font-normal leading-normal text-base">
               We are safeguarding consumers while empowering entrepreneurs,
               producers and creators. Every preorder in our platform will be
               Transferable,Tradable and Verifiable before it expires.
@@ -884,7 +891,7 @@ function Home() {
           <h4 className="text-xxl text-center mb-4 font-bold text-white">
             Book Early & Save Big
           </h4>
-          <p className="text-white text-center font-normal text-base">
+          <p className="leading-normal text-center font-normal text-base">
             Every preorder in our platform will be Transferable,Tradable and
             Verifiable before it expires.
           </p>
@@ -909,7 +916,7 @@ function Home() {
           <h4 className="text-xxl text-center mb-4 font-bold text-white">
             Trade to Earn before Expire
           </h4>
-          <p className="text-white text-center font-normal text-base">
+          <p className="leading-normal text-center font-normal text-base">
             Every preorder in our platform will be Transferable,Tradable and
             Verifiable before it expires.
           </p>

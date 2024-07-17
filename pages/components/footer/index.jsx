@@ -12,8 +12,8 @@ function Footer() {
           alt=""
         />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl className="flex gap-8 mb-12">
-            <div className="w-3/4">
+          <dl className="md:flex gap-8 mb-12">
+            <div className="md:w-3/4 w-full">
               <h6 className="text-white text-xl font-bold mb-3">
                 We are safeguarding consumers while empowering entrepreneurs,
                 producers and creators. Every preorder in our platform will be
@@ -23,7 +23,7 @@ function Footer() {
                 Copyright © 2024. All Rights Reserved.
               </p>
             </div>
-            <div className="w-1/4">
+            <div className="md:w-1/4 w-full">
               <ul className="text-right">
                 <li className="mb-3">
                   <Link href={"#"} className="font-normal text-white text-sm">

@@ -27,16 +27,16 @@ body {
 }
 
 /* CUSTOME FONT CLASS */
-.font-400{
-  font-family: 'font-400';
+.font-400 {
+  font-family: "font-400";
 }
 
-.font-500{
-  font-family: 'font-500';
+.font-500 {
+  font-family: "font-500";
 }
 
-.font-700{
-  font-family: 'font-700';
+.font-700 {
+  font-family: "font-700";
 }
 /* CUSTOME FONT CLASS */
 
@@ -55,9 +55,49 @@ p {
 }
 
 /* NAV FIXED STYLING */
+@media (max-width: 768px) {
+  nav {
+    background-color: #1b2027;
+  }
+}
+
+.mobileActiveMenu .inner-mobileActiveMenu {
+  flex-direction: column;
+  align-items: start;
+}
+
+.mobileActiveMenu .inner-mobileActiveMenu a {
+  padding: 20px;
+  margin: 0 !important;
+  width: 100%;
+  border-bottom: 1px solid #6b6b6b;
+}
+
+.mobileActiveMenu .inner-mobileActiveMenu a:last-child {
+  margin-top: 2rem !important;
+}
+
+.mobileActiveMenu {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #1b2027;
+  left: 0;
+  top: 0;
+  margin: 0 !important;
+}
+
 nav.fixed-top {
   background: #1b2027;
   padding: 0;
+  position: fixed;
+}
+
+nav.fixed-top {
+  background: #1b2027;
+  padding: 0;
+  position: fixed;
 }
 
 nav.fixed-top .bg-navbar-1 {
@@ -115,3 +155,18 @@ nav .bg-navbar-1 {
   box-shadow: rgba(56, 240, 157, 0.2) 0px 7px 29px 0px;
 }
 /* unlocking-section */
+
+/* welcome-banner-gif */
+@media (max-width: 768px) {
+  .welcome-banner-gif {
+    width: 24rem !important;
+    top: 26%;
+  }
+}
+.welcome-banner-gif {
+  width: 42rem;
+  height: auto;
+  object-fit: contain;
+  top: 25%;
+}
+/* welcome-banner-gif */

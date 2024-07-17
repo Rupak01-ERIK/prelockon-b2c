@@ -21,29 +21,14 @@ function Home() {
           src="./welcome-banner-background.png"
           alt=""
         />
+        <img
+          className="welcome-banner-gif absolute mix-blend-lighten right-0 top-20 md:block hidden"
+          src="./welcome-gif.gif"
+          alt=""
+        />
         <div className="relative isolate px-6 pt-14 lg:px-8">
-          {/* <div className="me-auto w-1/2 py-40 px-2 sm:px-6 lg:px-8 align-left">
-            <div className="mb-8 sm:flex sm:justify-start">
-              <div className="relative bg-navbar-1 font-normal rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                All preorders are tokenized on-chain
-              </div>
-            </div>
-            <div className="text-start">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Save Early and Worry Less with PreLockon
-              </h1>
-              <p className="mt-6 text-sm leading-8 text-white">
-                We are safeguarding consumers while empowering entrepreneurs,
-                producers and creators. Every preorder in our platform will be
-                Transferable,Tradable and Verifiable before it expires.
-              </p>
-              <div className="mt-10 flex items-center justify-start gap-x-6">
-                <Button />
-              </div>
-            </div>
-          </div> */}
           <div className="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
-            <dl className="grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2">
+            <dl className="grid grid-cols-1 gap-8 md:mt-20 md:grid-cols-2">
               <div className="text-start">
                 <div className="relative w-fit mb-3 bg-navbar-1 font-normal rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   All preorders are tokenized on-chain
@@ -61,7 +46,7 @@ function Home() {
                   <Button />
                 </div>
                 <div className="hero-list-wrapper">
-                  <ul className="flex">
+                  <ul className="flex flex-wrap">
                     <li className="flex me-4 text-white items-center">
                       <svg
                         className="me-2"
@@ -72,8 +57,8 @@ function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M16.6795 6.26636C17.0847 6.64166 17.1089 7.27437 16.7336 7.67954L7.72736 17.4029C6.98988 18.1991 5.76013 18.1991 5.02265 17.4029L1.26636 13.3475C0.891066 12.9423 0.915288 12.3096 1.32047 11.9343C1.72564 11.559 2.35835 11.5833 2.73364 11.9884L6.375 15.9197L15.2664 6.32047C15.6417 5.91529 16.2744 5.89107 16.6795 6.26636ZM21.68 6.26636C22.0851 6.64166 22.1094 7.27436 21.7341 7.67954L12.7278 17.4029C12.3525 17.808 11.7198 17.8323 11.3146 17.457C10.9094 17.0817 10.8852 16.449 11.2605 16.0438L20.2668 6.32047C20.6421 5.91529 21.2748 5.89107 21.68 6.26636Z"
                           fill="#06FACE"
                         />
@@ -90,8 +75,8 @@ function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M16.6795 6.26636C17.0847 6.64166 17.1089 7.27437 16.7336 7.67954L7.72736 17.4029C6.98988 18.1991 5.76013 18.1991 5.02265 17.4029L1.26636 13.3475C0.891066 12.9423 0.915288 12.3096 1.32047 11.9343C1.72564 11.559 2.35835 11.5833 2.73364 11.9884L6.375 15.9197L15.2664 6.32047C15.6417 5.91529 16.2744 5.89107 16.6795 6.26636ZM21.68 6.26636C22.0851 6.64166 22.1094 7.27436 21.7341 7.67954L12.7278 17.4029C12.3525 17.808 11.7198 17.8323 11.3146 17.457C10.9094 17.0817 10.8852 16.449 11.2605 16.0438L20.2668 6.32047C20.6421 5.91529 21.2748 5.89107 21.68 6.26636Z"
                           fill="#06FACE"
                         />
@@ -108,8 +93,8 @@ function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M16.6795 6.26636C17.0847 6.64166 17.1089 7.27437 16.7336 7.67954L7.72736 17.4029C6.98988 18.1991 5.76013 18.1991 5.02265 17.4029L1.26636 13.3475C0.891066 12.9423 0.915288 12.3096 1.32047 11.9343C1.72564 11.559 2.35835 11.5833 2.73364 11.9884L6.375 15.9197L15.2664 6.32047C15.6417 5.91529 16.2744 5.89107 16.6795 6.26636ZM21.68 6.26636C22.0851 6.64166 22.1094 7.27436 21.7341 7.67954L12.7278 17.4029C12.3525 17.808 11.7198 17.8323 11.3146 17.457C10.9094 17.0817 10.8852 16.449 11.2605 16.0438L20.2668 6.32047C20.6421 5.91529 21.2748 5.89107 21.68 6.26636Z"
                           fill="#06FACE"
                         />
@@ -126,8 +111,8 @@ function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M16.6795 6.26636C17.0847 6.64166 17.1089 7.27437 16.7336 7.67954L7.72736 17.4029C6.98988 18.1991 5.76013 18.1991 5.02265 17.4029L1.26636 13.3475C0.891066 12.9423 0.915288 12.3096 1.32047 11.9343C1.72564 11.559 2.35835 11.5833 2.73364 11.9884L6.375 15.9197L15.2664 6.32047C15.6417 5.91529 16.2744 5.89107 16.6795 6.26636ZM21.68 6.26636C22.0851 6.64166 22.1094 7.27436 21.7341 7.67954L12.7278 17.4029C12.3525 17.808 11.7198 17.8323 11.3146 17.457C10.9094 17.0817 10.8852 16.449 11.2605 16.0438L20.2668 6.32047C20.6421 5.91529 21.2748 5.89107 21.68 6.26636Z"
                           fill="#06FACE"
                         />
@@ -415,7 +400,7 @@ function Home() {
             </div>
             <div className="loop-content-wrapper">
               <div className="mb-6 loop-content-inner-wrapper">
-                <div className="pl-10 flex items-center">
+                <div className="flex items-center">
                   <div className="left-number-wrapper mr-2">
                     <span className="customize-text-one">1</span>
                   </div>
@@ -460,7 +445,7 @@ function Home() {
                 </svg>
               </div>
               <div className="mb-6 loop-content-inner-wrapper">
-                <div className="pl-10 flex items-center">
+                <div className="flex items-center">
                   <div className="left-number-wrapper mr-2">
                     <span className="customize-text-one">2</span>
                   </div>
@@ -507,7 +492,7 @@ function Home() {
                 </svg>
               </div>
               <div className="mb-6 loop-content-inner-wrapper">
-                <div className="pl-10 flex items-center">
+                <div className="flex items-center">
                   <div className="left-number-wrapper mr-2">
                     <span className="customize-text-one">3</span>
                   </div>
@@ -553,7 +538,7 @@ function Home() {
                 </svg>
               </div>
               <div className="mb-6 loop-content-inner-wrapper">
-                <div className="pl-10 flex items-center">
+                <div className="flex items-center">
                   <div className="left-number-wrapper mr-2">
                     <span className="customize-text-one">4</span>
                   </div>
@@ -866,8 +851,8 @@ function Home() {
       {/* HOME TABLE SECTION */}
 
       {/* BEFORE EXPIRE SECTION */}
-      <section className="bg-section-background-color trade-transfer-wrapper py-20">
-        <div className="py-16 flex justify-center overflow-hidden relative mx-auto text-center max-w-7xl px-6 lg:px-8">
+      <section className="bg-section-background-color trade-transfer-wrapper pb-20">
+        <div className="py-16 flex-wrap flex justify-center overflow-hidden relative mx-auto text-center max-w-7xl px-6 lg:px-8">
           <img
             className="pointer-events-none absolute top-0 opacity-30 h-full	w-full"
             src="./expires-banner.png"
@@ -929,9 +914,9 @@ function Home() {
             Verifiable before it expires.
           </p>
         </div>
-        <div className="flex overflow-hidden relative mx-auto text-center max-w-7xl">
+        <div className="flex-wrap md:flex-nowrap flex overflow-hidden relative mx-auto text-center max-w-7xl">
           {/* Carousel Item 1 */}
-          <div className="px-2 carousel-item-wrapper">
+          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
             <Link href={"#"}>
               <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">
@@ -981,7 +966,7 @@ function Home() {
             </Link>
           </div>
           {/* Carousel Item 2 */}
-          <div className="px-2 carousel-item-wrapper">
+          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
             <Link href={"#"}>
               <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">
@@ -1031,7 +1016,7 @@ function Home() {
             </Link>
           </div>
           {/* Carousel Item 3 */}
-          <div className="px-2 carousel-item-wrapper">
+          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
             <Link href={"#"}>
               <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">

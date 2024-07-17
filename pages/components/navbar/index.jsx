@@ -6,6 +6,15 @@ import Link from "next/link";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isActivemenu, setIsActivemenu] = useState(false);
+
+  const handleClick = () => {
+    setIsActivemenu(!isActivemenu);
+  };
+
+  const closeHandleClick = () => {
+    setIsActivemenu(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +35,10 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 p-4 duration-300 ${scrolled ? "fixed-top" : "fixed top-0 w-full z-50 p-4 duration-300"}`}>
+        className={`md:fixed relative top-0 w-full z-50 p-4 duration-300 ${
+          scrolled ? "fixed-top" : "fixed top-0 w-full z-50 p-4 duration-300"
+        }`}
+      >
         <img
           className={`${
             scrolled
@@ -85,19 +97,45 @@ function Navbar() {
                   />
                 </Link>
               </div>
-              <div className="sm:ml-6 sm:block">
-                <div className="flex align-middle space-x-4 items-center">
+              <div
+                className={`sm:ml-6 md:block hidden ${
+                  isActivemenu ? "mobileActiveMenu" : ""
+                }`}
+              >
+                <div className="inner-mobileActiveMenu flex align-middle space-x-4 items-center">
+                  <div
+                    className="md:hidden block ml-auto w-fit menuCloseMobile"
+                    onClick={closeHandleClick}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-x"
+                      width="44"
+                      height="44"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#ff4500"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M18 6l-12 12" />
+                      <path d="M6 6l12 12" />
+                    </svg>
+                  </div>
                   <Link
                     href="/product"
-                    className="font-normal mr-2 sm:mr-8 text-white hover:text-whitfontOutfit text-base"
+                    className="font-normal text-white hover:text-whitfontOutfit text-base"
                   >
                     Roadmap
                   </Link>
-                  <a
-                    href="#"
-                    className="flex items-center font-normal mr-2 sm:mr-8 text-white hover:text-white text-base"
+                  <Link
+                    href={"#"}
+                    className="flex items-center font-normal text-white hover:text-white text-base"
                   >
-                    <svg className="me-2"
+                    <svg
+                      className="me-2"
                       width="20"
                       height="21"
                       viewBox="0 0 20 21"
@@ -122,7 +160,8 @@ function Navbar() {
                       </defs>
                     </svg>
                     Join Discord
-                    <svg className="ms-2"
+                    <svg
+                      className="ms-2"
                       width="20"
                       height="21"
                       viewBox="0 0 20 21"
@@ -138,9 +177,28 @@ function Navbar() {
                         fill="white"
                       />
                     </svg>
-                  </a>
+                  </Link>
                   <Button />
                 </div>
+              </div>
+              <div className="sm:ml-6 md:hidden block" onClick={handleClick}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-menu-2"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="#00fcd0"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 6l16 0" />
+                  <path d="M4 12l16 0" />
+                  <path d="M4 18l16 0" />
+                </svg>
               </div>
             </div>
           </div>

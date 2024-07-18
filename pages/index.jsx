@@ -606,21 +606,21 @@ function Home() {
           </div>
           <div className="w-full table-inner-wrapper">
             <div className="flex mb-6 justify-between text-center table-heading-wrapper">
-              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
+              <div className="w-2/4 me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
                 Description
               </div>
-              <div className="w-full me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
+              <div className="w-1/4 me-2 text-sm py-3 bg-slate-700 text-white uppercase items-center flex justify-center">
                 Traditional Platform
               </div>
-              <div className="w-full text-sm py-3 text-black bg-primary-color uppercase items-center flex justify-center">
+              <div className="w-1/4 text-sm py-3 text-black bg-primary-color uppercase items-center flex justify-center">
                 PreLockon
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Non Custodial
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -636,7 +636,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -652,10 +652,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Royalty on Secondary Market Sale
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -671,7 +671,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -687,10 +687,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Fund Locked for Time
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -706,7 +706,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -722,10 +722,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Open Access
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -741,7 +741,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -757,10 +757,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Expiration
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -776,7 +776,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -792,10 +792,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Transparency
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -811,7 +811,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -827,10 +827,10 @@ function Home() {
               </div>
             </div>
             <div className="flex mb-6 justify-between text-center table-content-wrapper">
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-2/4 text-sm text-white flex justify-center">
                 Cryptocurrency Accepted
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -846,7 +846,7 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className="w-full text-sm text-white flex justify-center">
+              <div className="w-1/4 text-sm text-white flex justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -994,7 +994,7 @@ function Home() {
                   Preorder Now
                 </Link>
               </div>
-              <div className="md:w-3/4 w-full">
+              <div className="lg:w-3/4 w-full">
                 <div className="flex justify-end md:flex-row flex-col">
                   <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
                     <h5 className="text-primary-color font-medium text-xl">
@@ -1037,8 +1037,8 @@ function Home() {
         <div className="flex-wrap md:flex-nowrap flex overflow-hidden relative mx-auto text-center max-w-7xl">
           {/* Carousel Item 1 */}
           <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"}>
-              <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
+            <Link href={"#"} className="h-full block">
+              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
@@ -1062,7 +1062,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="mb-5 description">
-                    <p className="text-start text-white text-sm	">
+                    <p className="text-start text-white text-sm	line-clamp-1">
                       Iphone 17 pro max in our platform will be transferable,
                       tradable and verifiable before it expires.
                     </p>
@@ -1087,8 +1087,8 @@ function Home() {
           </div>
           {/* Carousel Item 2 */}
           <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"}>
-              <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
+            <Link href={"#"} className="h-full block">
+              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
@@ -1112,7 +1112,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="mb-5 description">
-                    <p className="text-start text-white text-sm	">
+                    <p className="text-start text-white text-sm	line-clamp-1">
                       The ultimate mixed-reality headset for a new era of
                       immersive experiences.
                     </p>
@@ -1137,8 +1137,8 @@ function Home() {
           </div>
           {/* Carousel Item 3 */}
           <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"}>
-              <div className="rounded-lg overflow-hidden before-expire-card-wrapper">
+            <Link href={"#"} className="h-full block">
+              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
                 <div className="image-wrapper relative">
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
@@ -1162,7 +1162,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="mb-5 description">
-                    <p className="text-start text-white text-sm	">
+                    <p className="text-start text-white text-sm	line-clamp-1">
                       The flagship smartphone with cutting-edge performance and
                       stunning design.
                     </p>

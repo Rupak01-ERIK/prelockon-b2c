@@ -7,6 +7,7 @@ import Link from "next/link";
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isActivemenu, setIsActivemenu] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
     setIsActivemenu(!isActivemenu);
@@ -32,8 +33,64 @@ function Navbar() {
     };
   }, []);
 
+  // scroll top
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      // Show button after scrolling down 100px
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up function to remove the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
+      <div
+        id="return-top"
+        className={`fixed z-40 cursor-pointer hover:-translate-y-1 duration-75 right-9 bottom-9 ${
+          isVisible ? "block" : "hidden"
+        }`}
+        onClick={scrollToTop}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-circle-arrow-up-filled"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#06FACE"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-4.98 3.66l-.163 .01l-.086 .016l-.142 .045l-.113 .054l-.07 .043l-.095 .071l-.058 .054l-4 4l-.083 .094a1 1 0 0 0 1.497 1.32l2.293 -2.293v5.586l.007 .117a1 1 0 0 0 1.993 -.117v-5.585l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-4 -4l-.082 -.073l-.089 -.064l-.113 -.062l-.081 -.034l-.113 -.034l-.112 -.02l-.098 -.006z"
+            stroke-width="0"
+            fill="#06FACE"
+          />
+        </svg>
+      </div>
+
       <nav
         className={`md:fixed relative top-0 w-full z-50 p-4 duration-300 ${
           scrolled ? "fixed-top" : "fixed top-0 w-full z-50 p-4 duration-300"
@@ -98,8 +155,8 @@ function Navbar() {
                 </Link>
               </div>
               <div
-                className={`sm:ml-6 md:block hidden ${
-                  isActivemenu ? "mobileActiveMenu" : ""
+                className={`sm:ml-6 md:block ${
+                  isActivemenu ? "mobilemenu mobileActiveMenu" : "mobilemenu"
                 }`}
               >
                 <div className="inner-mobileActiveMenu flex align-middle space-x-4 items-center">
@@ -110,7 +167,7 @@ function Navbar() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="icon icon-tabler icon-tabler-x"
-                      width="44"
+                      width="30"
                       height="44"
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
@@ -185,7 +242,7 @@ function Navbar() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-menu-2"
-                  width="44"
+                  width="30"
                   height="44"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"

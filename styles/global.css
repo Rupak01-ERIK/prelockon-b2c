@@ -65,7 +65,7 @@ p {
 }
 
 .progress-wrapper .barCompleted {
-  background-color: #06FACE;
+  background-color: #06face;
   width: 80%;
 }
 
@@ -82,31 +82,48 @@ p {
   }
 }
 
-.mobileActiveMenu .inner-mobileActiveMenu {
-  flex-direction: column;
-  align-items: start;
-}
+@media (max-width: 767px) {
+  .mobilemenu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #1b2027;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    transform: translateX(-100rem);
+    transition: 0.3s ease-in-out;
+  }
+  .mobilemenu .inner-mobileActiveMenu {
+    flex-direction: column;
+    align-items: start;
+    padding: 1.875rem;
+  }
 
-.mobileActiveMenu .inner-mobileActiveMenu a {
-  padding: 20px;
-  margin: 0 !important;
-  width: 100%;
-  border-bottom: 1px solid #6b6b6b;
-}
+  .mobilemenu .inner-mobileActiveMenu a {
+    padding: 20px;
+    margin: 0 !important;
+    width: 100%;
+    border-bottom: 1px solid #6b6b6b;
+  }
 
-.mobileActiveMenu .inner-mobileActiveMenu a:last-child {
-  margin-top: 2rem !important;
+  .mobilemenu .inner-mobileActiveMenu a:last-child {
+    margin-top: 2rem !important;
+    padding: 0.625rem;
+  }
 }
 
 .mobileActiveMenu {
   position: fixed;
   display: block;
+  transform: translateX(0rem);
   height: 100%;
   width: 100%;
   background: #1b2027;
   left: 0;
   top: 0;
   margin: 0 !important;
+  transition: 0.3s ease-in-out;
 }
 
 .back-ground-type-one {

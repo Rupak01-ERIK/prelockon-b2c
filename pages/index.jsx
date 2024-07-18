@@ -136,7 +136,7 @@ function Home() {
       {/* WELCOME BANNER */}
 
       {/* AFTER WELCOME BANNER CONTENT SECTION */}
-      <section className="bg-section-background-color unlocking-section overflow-hidden pt-24">
+      <section className="bg-section-background-color unlocking-section overflow-hidden md:pt-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto text-center max-w-3xl">
             <h2 className="mb-4 font-bold text-3xl tracking-tight text-white">

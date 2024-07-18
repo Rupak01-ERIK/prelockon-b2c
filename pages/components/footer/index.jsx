@@ -33,7 +33,7 @@ function Footer() {
                 <li className="mb-3">
                   <Link
                     href={"#"}
-                    className="font-normal text-white text-sm flex justify-end hover:underline"
+                    className="font-normal text-white text-sm flex md:justify-end justify-center hover:underline"
                   >
                     <svg
                       className="me-2"

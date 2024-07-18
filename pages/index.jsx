@@ -15,14 +15,14 @@ function Home() {
       <Navbar />
 
       {/* WELCOME BANNER */}
-      <section className="bg-section-background-color relative heroSection">
+      <section className="bg-section-background-color md:block flex md:flex-col flex-col-reverse relative heroSection">
         <img
           className="absolute h-full w-full object-cover"
           src="./welcome-banner-background.png"
           alt=""
         />
         <img
-          className="welcome-banner-gif absolute mix-blend-lighten right-0 top-20 md:block hidden"
+          className="welcome-banner-gif md:absolute relative mix-blend-lighten right-0 top-20 md:block"
           src="./welcome-gif.gif"
           alt=""
         />

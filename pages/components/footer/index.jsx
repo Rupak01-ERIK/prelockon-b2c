@@ -24,7 +24,7 @@ function Footer() {
               </p>
             </div>
             <div className="md:w-1/4 w-full">
-              <ul className="text-right">
+              <ul className="md:text-right md:mt-0 mt-10 text-center">
                 <li className="mb-3">
                   <Link href={"#"} className="font-normal text-white text-sm hover:underline">
                     Roadmap

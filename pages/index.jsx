@@ -1008,19 +1008,19 @@ function Home() {
               <div className="lg:w-3/4 w-full">
                 <div className="flex justify-end md:flex-row flex-col">
                   <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
-                    <h5 className="text-primary-color font-medium text-xl">
+                    <h5 className="text-primary-color font-normal text-xl">
                       $1100
                     </h5>
                     <p className="font-400 text-sm">Preorder Price</p>
                   </div>
                   <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
-                    <h5 className="text-primary-color font-medium text-xl">
+                    <h5 className="text-primary-color font-normal text-xl">
                       $1200
                     </h5>
                     <p className="font-400 text-sm">Market Price</p>
                   </div>
                   <div className="me-5 pe-5 border-right-custom text-end inner-wrapper">
-                    <h5 className="text-primary-color font-medium text-xl">
+                    <h5 className="text-primary-color font-normal text-xl">
                       10 October 2025
                     </h5>
                     <p className="font-400 text-sm">Ready to Ship</p>

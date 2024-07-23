@@ -53,6 +53,10 @@ p {
   color: #d1d2d4;
 }
 
+.card-bottom-section h5{
+  font-family: "font-500";
+}
+
 /* progress wrapper */
 .progress-wrapper .wrapper {
   border-radius: 50px;

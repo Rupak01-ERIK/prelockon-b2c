@@ -66,12 +66,13 @@ p {
 
 .progress-wrapper .barCompleted {
   background-color: #06face;
-  width: 80%;
+  width: 30%;
 }
 
 .progress-wrapper .label {
   font-size: 20px;
   color: green;
+  visibility: hidden;
 }
 /* progress wrapper */
 
@@ -214,15 +215,29 @@ nav .bg-navbar-1 {
 /* welcome-banner-gif */
 @media (max-width: 768px) {
   .welcome-banner-gif {
-    width: 24rem !important;
-    top: 26%;
+    width: auto !important;
+    height: 15rem !important;
+    margin-left: auto;
   }
 }
-.welcome-banner-gif {
+@media (max-width: 1345px) {
+  .welcome-banner-gif {
+    margin-left: auto;
+    width: 30rem !important;
+    height: 100%;
+  }
+}
+/* .welcome-banner-gif {
   width: 42rem;
   height: auto;
   object-fit: contain;
   top: 25%;
+} */
+.welcome-banner-gif {
+  width: 42rem;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
 }
 /* welcome-banner-gif */
 

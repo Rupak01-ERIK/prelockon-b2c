@@ -23,7 +23,7 @@ function Home() {
         />
         <img
           className="welcome-banner-gif md:absolute relative mix-blend-lighten right-0 top-20 md:block"
-          src="./welcome-gif.gif"
+          src="./welcome-gif.png"
           alt=""
         />
         <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -368,25 +368,34 @@ function Home() {
               >
                 <svg
                   className="me-2"
-                  width="20"
+                  width="21"
                   height="20"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 21 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clipPath="url(#clip0_460_2244)">
+                  <g clip-path="url(#clip0_832_3764)">
                     <path
-                      d="M16.9309 3.6415C15.6562 3.05662 14.2892 2.62568 12.86 2.37884C12.8339 2.37408 12.8079 2.38599 12.7945 2.40978C12.6187 2.72248 12.424 3.13037 12.2876 3.45099C10.7504 3.22084 9.22101 3.22084 7.7153 3.45099C7.5789 3.12326 7.3771 2.72248 7.2005 2.40978C7.1871 2.38677 7.16108 2.37486 7.13507 2.37884C5.70663 2.62486 4.33968 3.0558 3.06413 3.6415C3.05308 3.64627 3.04362 3.65419 3.03733 3.66451C0.444522 7.53814 -0.265791 11.3166 0.0826466 15.0481C0.0842091 15.0664 0.0944826 15.0838 0.108662 15.095C1.81933 16.3513 3.47644 17.1139 5.10273 17.6195C5.12874 17.6274 5.15632 17.6179 5.17288 17.5965C5.55757 17.0711 5.9005 16.5172 6.19452 15.9346C6.21187 15.9005 6.1953 15.86 6.15983 15.8465C5.61589 15.6402 5.09796 15.3886 4.59972 15.1029C4.5603 15.0799 4.55714 15.0236 4.59343 14.9966C4.69827 14.918 4.80315 14.8363 4.90327 14.7537C4.9214 14.7386 4.94663 14.7355 4.96792 14.745C8.24105 16.2394 11.7846 16.2394 15.0191 14.745C15.0404 14.7347 15.0656 14.7379 15.0845 14.7529C15.1847 14.8354 15.2895 14.918 15.3951 14.9965C15.4314 15.0235 15.429 15.0799 15.3896 15.1029C14.8914 15.3942 14.3735 15.6402 13.8287 15.8457C13.7933 15.8592 13.7775 15.9005 13.7949 15.9346C14.0952 16.5163 14.4382 17.0702 14.8157 17.5956C14.8315 17.6179 14.8599 17.6274 14.8859 17.6194C16.5201 17.1139 18.1772 16.3512 19.8878 15.0949C19.9028 15.0838 19.9123 15.0672 19.9139 15.0489C20.3309 10.7348 19.2154 6.98736 16.9568 3.66529C16.9514 3.65419 16.9419 3.64627 16.9309 3.6415ZM6.68339 12.776C5.69796 12.776 4.88597 11.8713 4.88597 10.7602C4.88597 9.64916 5.68218 8.74443 6.68339 8.74443C7.69241 8.74443 8.49655 9.65709 8.48077 10.7602C8.48077 11.8713 7.68452 12.776 6.68339 12.776ZM13.329 12.776C12.3436 12.776 11.5316 11.8713 11.5316 10.7602C11.5316 9.64916 12.3278 8.74443 13.329 8.74443C14.338 8.74443 15.1421 9.65709 15.1264 10.7602C15.1264 11.8713 14.3381 12.776 13.329 12.776Z"
-                      fill="#5865F2"
+                      d="M10.5 20C16.0228 20 20.5 15.5228 20.5 10C20.5 4.47715 16.0228 0 10.5 0C4.97715 0 0.5 4.47715 0.5 10C0.5 15.5228 4.97715 20 10.5 20Z"
+                      fill="#039BE5"
+                    />
+                    <path
+                      d="M5.07581 9.78338L14.7175 6.06588C15.165 5.90422 15.5558 6.17505 15.4108 6.85172L15.4116 6.85088L13.77 14.5851C13.6483 15.1334 13.3225 15.2667 12.8666 15.0084L10.3666 13.1659L9.16081 14.3276C9.02747 14.4609 8.91497 14.5734 8.65664 14.5734L8.83414 12.0292L13.4675 7.84338C13.6691 7.66588 13.4225 7.56588 13.1566 7.74255L7.43081 11.3476L4.96247 10.5776C4.42664 10.4076 4.41497 10.0417 5.07581 9.78338Z"
+                      fill="white"
                     />
                   </g>
                   <defs>
-                    <clipPath id="clip0_460_2244">
-                      <rect width="20" height="20" fill="white" />
+                    <clipPath id="clip0_832_3764">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
                     </clipPath>
                   </defs>
                 </svg>
-                Join Discord
+                Join Telegram
                 <svg
                   width="20"
                   height="20"
@@ -898,7 +907,7 @@ function Home() {
       <section className="bg-section-background-color bookearly-wrapper">
         <div className="md:w-1/2 mx-auto mb-12 overflow-hidden relative">
           <h4 className="text-xxl text-center mb-4 font-bold text-white">
-            Book Early & Save Big
+            How does it Look in the Future ?
           </h4>
           <p className="leading-normal text-center font-normal text-base">
             Every preorder in our platform will be Transferable,Tradable and
@@ -925,7 +934,7 @@ function Home() {
           </div>
           <div className="text-start md:w-3/5 w-full md:p-0 p-4">
             <h4 className="text-2xl	text-white font-700 mb-8">
-              Iphone 17 Pro Max
+              2 Story Townhouse
             </h4>
             <div className="flex md:flex-row flex-col border-custome-2 pb-6 mb-6 justify-between sold-section">
               <div className="md:w-1/2 w-full back-ground-type-one w-fit py-2 px-5 sold-by-wrapper">
@@ -938,12 +947,14 @@ function Home() {
                       height={"100%"}
                       width={"32px"}
                       className="object-contain"
-                      src="./sold-by.png"
+                      src="./one.png"
                       alt=""
                     />
                   </div>
                   <div className="right-content-wrapper">
-                    <h6 className="text-white text-base mb-1">Apple Inc.</h6>
+                    <h6 className="text-white text-base mb-1">
+                      Realty One Group Prestige
+                    </h6>
                     <p className="text-white text-xs font-normal font-400">
                       KYC(verified) Team(Public) Address(Public)
                     </p>
@@ -1043,7 +1054,7 @@ function Home() {
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
                   </div>
-                  <img src="./trade-image.png" alt="" />
+                  <img src="./TG1.png" alt="" />
                 </div>
                 <div className="p-5 relative title-wrapper h-full">
                   <img
@@ -1053,11 +1064,11 @@ function Home() {
                   />
                   <div className="flex mb-5 mt-margin-minus-40 items-end">
                     <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./apple-logo.png" alt="" />
+                      <img src="./century.png" alt="" />
                     </div>
                     <div className="right-title-wrapper">
                       <h4 className="text-white font-bold text-xl">
-                        Iphone 17 Pro Max
+                        Century 21 Legacy
                       </h4>
                     </div>
                   </div>
@@ -1093,7 +1104,7 @@ function Home() {
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
                   </div>
-                  <img src="./vision-pro.png" alt="" />
+                  <img src="./TG2.png" alt="" />
                 </div>
                 <div className="p-5 relative title-wrapper h-full">
                   <img
@@ -1103,11 +1114,11 @@ function Home() {
                   />
                   <div className="flex mb-5 mt-margin-minus-40 items-end">
                     <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./apple-logo.png" alt="" />
+                      <img src="./liz.png" alt="" />
                     </div>
                     <div className="right-title-wrapper">
                       <h4 className="text-white font-bold text-xl">
-                        Apple Vision Pro 2026
+                        Liz Moore Associates LLC
                       </h4>
                     </div>
                   </div>
@@ -1143,7 +1154,7 @@ function Home() {
                   <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
                     #Tech Gadgets
                   </div>
-                  <img src="./samsung-device.png" alt="" />
+                  <img src="./TG3.png" alt="" />
                 </div>
                 <div className="p-5 relative title-wrapper h-full">
                   <img
@@ -1153,11 +1164,11 @@ function Home() {
                   />
                   <div className="flex mb-5 mt-margin-minus-40 items-end">
                     <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./samsung.png" alt="" />
+                      <img src="./one-small.png" alt="" />
                     </div>
                     <div className="right-title-wrapper">
                       <h4 className="text-white font-bold text-xl">
-                        Samsung S26 Ultra
+                        Realty One Group Prestige
                       </h4>
                     </div>
                   </div>

@@ -8,7 +8,7 @@ function Button() {
         className="hover:bg-white text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
         href={"#"}
       >
-        Request Early Access
+        Launch Your Preorder
       </Link>
     </>
   );

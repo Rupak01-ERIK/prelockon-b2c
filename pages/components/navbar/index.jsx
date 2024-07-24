@@ -198,7 +198,7 @@ function Navbar() {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_805_2)">
+                      <g clipPath="url(#clip0_805_2)">
                         <path
                           d="M10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5Z"
                           fill="#039BE5"

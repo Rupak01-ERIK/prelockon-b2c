@@ -84,32 +84,16 @@ function Home() {
   useEffect(() => {
     // GSAP animation setup
     gsap.to(".experience-middle", {
-      scale: 8.5, // End scale value for the zoom effect
+      scale: 4.5, // End scale value for the zoom effect
       smoothOrigin: true,
       scrollTrigger: {
         duration: -10,
-        start: "60% 30%",
+        start: "63% 30%",
         end: "80% 30%",
         scrub: true,
-        markers: false,
+        markers: true,
       },
     });
-    // GSAP animation setup
-    // gsap.to(".experience-middle", {
-    //   scale: 8.5, // End scale value for the zoom effect
-    //   // ease: "none",
-    //   smoothOrigin: true,
-    //   scrollTrigger: {
-    //     duration: -100,
-    //     trigger: ".pin-scroll-wrapper",
-    //     start: "top 20%",
-    //     end: 'bottom top',
-    //     // toggleActions: "restart none none none",
-    //     scrub: true,
-    //     markers: true,
-    //     // pin: '.pin-scroll-wrapper',
-    //   },
-    // });
   }, []);
   return (
     <>
@@ -1008,9 +992,8 @@ function Home() {
       </section> */}
       {/* BEFORE EXPIRE SECTION */}
 
-      <section className="pin-scroll-wrapper">
       {/* BOOK EARLY SECTION */}
-      <section className="bg-section-background-color bookearly-wrapper">
+      <section className="bg-section-background-color bookearly-wrapper overflow-x-clip overflow-y-visible">
         <div className="md:w-1/2 mx-auto mb-12 relative">
           <div className="experience">
             <h4 className="bg-section-background-color experience-middle text-xxl text-center mb-4 font-bold text-white">
@@ -1321,7 +1304,6 @@ function Home() {
         </div>
       </section>
       {/* TRADE TO EARN SECTION */}
-      </section>
       <Footer />
     </>
   );

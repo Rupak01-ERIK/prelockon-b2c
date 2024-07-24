@@ -88,10 +88,10 @@ function Home() {
       smoothOrigin: true,
       scrollTrigger: {
         duration: -10,
-        start: "63% 30%",
+        start: "60% 30%",
         end: "80% 30%",
         scrub: true,
-        markers: false,
+        markers: true,
       },
     });
   }, []);

@@ -91,7 +91,7 @@ function Home() {
         start: "60% 30%",
         end: "80% 30%",
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
   }, []);

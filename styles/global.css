@@ -57,6 +57,18 @@ p {
   font-family: "font-500";
 }
 
+/* .experience .experience-middle{
+  transform: scale(calc(var(--progress1) * 8.5)) !important;
+  transform-origin: center;
+  font-size: 3rem;
+  font-family: 'bold';
+} */
+
+/* .pin-scroll-wrapper{
+  height: 100vh;
+  overflow: hidden;
+} */
+
 /* progress wrapper */
 .progress-wrapper .wrapper {
   border-radius: 50px;
@@ -78,6 +90,7 @@ p {
   color: green;
   visibility: hidden;
 }
+
 /* progress wrapper */
 
 /* NAV FIXED STYLING */

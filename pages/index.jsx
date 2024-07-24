@@ -1,11 +1,116 @@
-import React from "react";
+// import { useEffect } from "react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const Experience = () => {
+//   useEffect(() => {
+//     // GSAP animation setup
+//     gsap.to(".experience-middle", {
+//       scale: 8.5, // End scale value for the zoom effect
+//       ease: "none",
+//       scrollTrigger: {
+//         duration: -100,
+//         trigger: ".experience",
+//         start: "0 50%",
+//         end: "80% 66%",
+//         toggleActions: "restart none none none",
+//         scrub: true,
+//         markers: true,
+//       },
+//     });
+//   }, []);
+
+//   return (
+//     <>
+//       <section className="hello">hi</section>
+//       <div className="experience">
+//         <div className="experience-show">
+//           <div className="experience-middle-container">
+//             <h1 className="experience-middle">Enter My World</h1>
+//           </div>
+//         </div>
+//       </div>
+//       <section className="hello">hi</section>
+//       <style jsx>{`
+//         .experience {
+//           position: relative;
+//           width: 100%;
+//           height: 100vh;
+//           z-index: 10;
+//           overflow: hidden;
+//         }
+
+//         .hello {
+//           height: 100vh;
+//         }
+
+//         .experience .experience-middle-container {
+//           width: 100%;
+//           height: 100vh;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//         }
+
+//         .experience .experience-middle {
+//           font-size: 3rem;
+//           font-family: "bold";
+//           transform-origin: center;
+//           transform: unset;
+//         }
+//       `}</style>
+//     </>
+//   );
+// };
+
+// export default Experience;
+
+// 'use client';
+
 import Navbar from "./components/navbar/index";
 import Footer from "./components/footer/index";
 import Head from "next/head";
 import Link from "next/link";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
+  useEffect(() => {
+    // GSAP animation setup
+    gsap.to(".experience-middle", {
+      scale: 8.5, // End scale value for the zoom effect
+      smoothOrigin: true,
+      scrollTrigger: {
+        duration: -10,
+        start: "60% 30%",
+        end: "80% 30%",
+        scrub: true,
+        markers: false,
+      },
+    });
+    // GSAP animation setup
+    // gsap.to(".experience-middle", {
+    //   scale: 8.5, // End scale value for the zoom effect
+    //   // ease: "none",
+    //   smoothOrigin: true,
+    //   scrollTrigger: {
+    //     duration: -100,
+    //     trigger: ".pin-scroll-wrapper",
+    //     start: "top 20%",
+    //     end: 'bottom top',
+    //     // toggleActions: "restart none none none",
+    //     scrub: true,
+    //     markers: true,
+    //     // pin: '.pin-scroll-wrapper',
+    //   },
+    // });
+  }, []);
   return (
     <>
       <Head>
@@ -177,7 +282,7 @@ function Home() {
               </dt>
               <p className="leading-normal text-sm font-normal font-400">
                 Gain early access to unique and limited-time products and
-                services before they become widely available. 
+                services before they become widely available.
               </p>
             </div>
             <div className="inner-card-wrapper p-4">
@@ -308,7 +413,7 @@ function Home() {
               </dt>
               <p className="leading-normal font-normal text-sm font-400">
                 Lock in prices at the time of purchase to protect against future
-                price increases at the time of delivery. 
+                price increases at the time of delivery.
               </p>
             </div>
           </dl>
@@ -360,7 +465,7 @@ function Home() {
               </h4>
               <p className="mb-8">
                 Lock in prices at the time of purchase to protect against future
-                price increases at the time of delivery. 
+                price increases at the time of delivery.
               </p>
               <Link
                 className="text-black hover:bg-white flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
@@ -425,7 +530,7 @@ function Home() {
                       User Signup
                     </h3>
                     <p className="font-light text-sm">
-                      Register with your wallet or email, Setup your profile. 
+                      Register with your wallet or email, Setup your profile.
                     </p>
                   </div>
                 </div>
@@ -472,7 +577,7 @@ function Home() {
                     <p className="font-light text-sm">
                       You can browse the different projects listed on the
                       platform, choose what is best for you on the basis of what
-                      you like to experience or make profit on resale. 
+                      you like to experience or make profit on resale.
                     </p>
                   </div>
                 </div>
@@ -518,7 +623,7 @@ function Home() {
                     </h3>
                     <p className="font-light text-sm">
                       You can book your preorder, ask question, Monitor what is
-                      happening onchain. 
+                      happening onchain.
                     </p>
                   </div>
                 </div>
@@ -564,7 +669,7 @@ function Home() {
                     </h3>
                     <p className="font-light text-sm">
                       You have an opportunity to sell and make profit from your
-                      preorder before it expires. 
+                      preorder before it expires.
                     </p>
                   </div>
                 </div>
@@ -876,7 +981,7 @@ function Home() {
       {/* HOME TABLE SECTION */}
 
       {/* BEFORE EXPIRE SECTION */}
-      <section className="bg-section-background-color trade-transfer-wrapper pb-20">
+      {/* <section className="bg-section-background-color trade-transfer-wrapper pb-20">
         <div className="py-16 flex-wrap flex justify-center overflow-hidden relative mx-auto text-center max-w-7xl px-6 lg:px-8">
           <img
             className="pointer-events-none absolute top-0 opacity-30 h-full	w-full"
@@ -900,15 +1005,32 @@ function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* BEFORE EXPIRE SECTION */}
 
+      <section className="pin-scroll-wrapper">
       {/* BOOK EARLY SECTION */}
       <section className="bg-section-background-color bookearly-wrapper">
-        <div className="md:w-1/2 mx-auto mb-12 overflow-hidden relative">
-          <h4 className="text-xxl text-center mb-4 font-bold text-white">
-            How does it Look in the Future ?
-          </h4>
+        <div className="md:w-1/2 mx-auto mb-12 relative">
+          <div className="experience">
+            <h4 className="bg-section-background-color experience-middle text-xxl text-center mb-4 font-bold text-white">
+              How does it Look in the Future ?
+            </h4>
+          </div>
+          <style jsx>{`
+        .experience {
+          position: relative;
+          width: 100%;
+          height: 100%
+          z-index: 10;
+          text-align: center;
+        }
+
+        .experience .experience-middle {
+          transform-origin: center;
+          transform: unset;
+        }
+      `}</style>
           <p className="leading-normal text-center font-normal text-base">
             Every preorder in our platform will be Transferable,Tradable and
             Verifiable before it expires.
@@ -1199,6 +1321,7 @@ function Home() {
         </div>
       </section>
       {/* TRADE TO EARN SECTION */}
+      </section>
       <Footer />
     </>
   );

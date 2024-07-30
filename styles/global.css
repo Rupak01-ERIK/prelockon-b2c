@@ -77,7 +77,7 @@ p {
 }
 
 .progress-wrapper .container {
-  background-color: #ffffff38;
+  background-color: #1b202714;
 }
 
 .progress-wrapper .barCompleted {
@@ -146,7 +146,16 @@ p {
 
 .back-ground-type-one {
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgb(27 32 39);
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+
+.card-bottom-section .text-primary-color{
+  color: rgb(2, 204, 168);
+}
+
+.card-bottom-section .bg-primary-color{
+  background-color: rgb(2, 204, 168);
 }
 
 nav.fixed-top {
@@ -263,3 +272,19 @@ nav .bg-navbar-1 {
     max-width: 80% !important;
   }
 }
+
+/* .side-scroll-section-wrapper{
+  height: 100vh;
+}
+
+.side-scroll-section-wrapper .pane{
+  height: 100vh;
+}
+
+.side-scroll-section-wrapper .pane-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+} */

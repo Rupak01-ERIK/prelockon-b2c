@@ -1100,7 +1100,7 @@ function Home() {
                     </div>
                     <img src="./TG1.png" alt="" />
                   </div>
-                  <div className="p-5 relative title-wrapper h-full">
+                  <div className="p-5 relative title-wrapper h-full bg-white">
                     <img
                       className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                       src="./expires-banner.png"
@@ -1111,19 +1111,19 @@ function Home() {
                         <img src="./century.png" alt="" />
                       </div>
                       <div className="right-title-wrapper">
-                        <h4 className="text-white font-bold text-xl">
+                        <h4 className="text-black font-bold text-xl">
                           Century 21 Legacy
                         </h4>
                       </div>
                     </div>
                     <div className="mb-5 description">
-                      <p className="text-start text-white text-sm	line-clamp-1">
+                      <p className="text-start text-black text-sm	line-clamp-1">
                         Iphone 17 pro max in our platform will be transferable,
                         tradable and verifiable before it expires.
                       </p>
                     </div>
                     <div className="mb-5 price-wrapper">
-                      <h6 className="font-400 text-start text-white text-sm">
+                      <h6 className="font-400 text-start text-black text-sm">
                         Price:{" "}
                         <span className="text-primary-color font-semibold text-xl">
                           $1100
@@ -1150,7 +1150,7 @@ function Home() {
                     </div>
                     <img src="./TG2.png" alt="" />
                   </div>
-                  <div className="p-5 relative title-wrapper h-full">
+                  <div className="p-5 relative title-wrapper h-full bg-white">
                     <img
                       className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                       src="./expires-banner.png"
@@ -1161,19 +1161,19 @@ function Home() {
                         <img src="./liz.png" alt="" />
                       </div>
                       <div className="right-title-wrapper">
-                        <h4 className="text-white font-bold text-xl">
+                        <h4 className="text-black font-bold text-xl">
                           Liz Moore Associates LLC
                         </h4>
                       </div>
                     </div>
                     <div className="mb-5 description">
-                      <p className="text-start text-white text-sm	line-clamp-1">
+                      <p className="text-start text-black text-sm	line-clamp-1">
                         The ultimate mixed-reality headset for a new era of
                         immersive experiences.
                       </p>
                     </div>
                     <div className="mb-5 price-wrapper">
-                      <h6 className="font-400 text-start text-white text-sm">
+                      <h6 className="font-400 text-start text-black text-sm">
                         Price:{" "}
                         <span className="text-primary-color font-semibold text-xl">
                           $1100
@@ -1200,7 +1200,7 @@ function Home() {
                     </div>
                     <img src="./TG3.png" alt="" />
                   </div>
-                  <div className="p-5 relative title-wrapper h-full">
+                  <div className="p-5 relative title-wrapper h-full bg-white">
                     <img
                       className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
                       src="./expires-banner.png"
@@ -1211,19 +1211,19 @@ function Home() {
                         <img src="./one-small.png" alt="" />
                       </div>
                       <div className="right-title-wrapper">
-                        <h4 className="text-white font-bold text-xl">
+                        <h4 className="text-black font-bold text-xl">
                           Realty One Group Prestige
                         </h4>
                       </div>
                     </div>
                     <div className="mb-5 description">
-                      <p className="text-start text-white text-sm	line-clamp-1">
+                      <p className="text-start text-black text-sm	line-clamp-1">
                         The flagship smartphone with cutting-edge performance
                         and stunning design.
                       </p>
                     </div>
                     <div className="mb-5 price-wrapper">
-                      <h6 className="font-400 text-start text-white text-sm">
+                      <h6 className="font-400 text-start text-black text-sm">
                         Price:{" "}
                         <span className="text-primary-color font-semibold text-xl">
                           $1100

@@ -106,7 +106,7 @@ function Home() {
                 </p>
                 <div className="mt-10 mb-20 flex items-center justify-start gap-x-6">
                   <Link
-                    className="text-black ms-0 text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                    className="text-black ms-0 text-center hover:bg-white hover:text-black font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                     href={"#"}
                   >
                     Join our Community
@@ -423,7 +423,7 @@ function Home() {
                 price increases at the time of delivery.
               </p>
               <Link
-                className="text-black flex w-fit items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                className="text-black flex w-fit hover:bg-white hover:text-black items-center text-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
                 href={"#"}
               >
                 <svg

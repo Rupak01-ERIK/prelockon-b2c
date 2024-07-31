@@ -191,7 +191,8 @@ function Navbar() {
                     href={"#"}
                     className="flex items-center font-normal text-white hover:text-white text-base hover:underline"
                   >
-                    <svg className="me-2"
+                    <svg
+                      className="me-2"
                       width="20"
                       height="21"
                       viewBox="0 0 20 21"

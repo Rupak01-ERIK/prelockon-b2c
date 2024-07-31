@@ -4,7 +4,6 @@ import Navbar from "./components/navbar/index";
 import Footer from "./components/footer/index";
 import Head from "next/head";
 import Link from "next/link";
-
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -23,48 +22,9 @@ function Home() {
         start: "60% 30%",
         end: "80% 30%",
         scrub: true,
-        pin: true,
         markers: false,
       },
     });
-
-    const sections = gsap.utils.toArray(".panel");
-
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".container",
-        pin: true,
-        scrub: 2, // Increase this value to slow down the animation
-        snap: 1 / (sections.length - 1),
-        end: () => "+=" + document.querySelector(".container").offsetWidth,
-      },
-    });
-
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercentage = (scrollPosition / windowHeight) * 100;
-
-      const stickyDiv = document.getElementById("stickyDiv");
-      if (stickyDiv) {
-        if (scrollPercentage >= 73 && scrollPercentage < 87) {
-          stickyDiv.classList.add('visible');
-          stickyDiv.classList.remove('hidden');
-        } else {
-          stickyDiv.classList.remove('visible');
-          stickyDiv.classList.add('hidden');
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
   return (
     <>
@@ -963,43 +923,35 @@ function Home() {
       </section> */}
       {/* BEFORE EXPIRE SECTION */}
 
-      {/* BOOK EARLY SECTION */}
-      <section className="relative bg-section-background-color bookearly-wrapper overflow-x-clip overflow-y-visible ">
-        <div className="md:w-1/2 mx-auto mb-12 relative">
-          <div className="relative experience">
-            <h4
-              id="stickyDiv"
-              className="sticky-header bg-section-background-color experience-middle text-xxl text-center mb-4 font-bold text-white"
-            >
-              How does it Look in the Future ?
-            </h4>
-            <h4 className=" bg-section-background-color experience-middle text-xxl text-center mb-4 font-bold text-white">
-              How does it Look in the Future ?
-            </h4>
+      {/* SLIDE SCROLL SECTION */}
+      <div className="relative side-scroll-section-wrapper">
+        {/* BOOK EARLY SECTION */}
+        <section className="pane bg-section-background-color bookearly-wrapper overflow-x-clip overflow-y-visible">
+          <div className="md:w-1/2 mx-auto mb-12 relative">
+            <div className="experience">
+              <h4 className="bg-section-background-color experience-middle text-xxl text-center mb-4 font-bold text-white">
+                How does it Look in the Future ?
+              </h4>
+            </div>
+            <style jsx>{`
+        .experience {
+          position: relative;
+          width: 100%;
+          height: 100%
+          z-index: 10;
+          text-align: center;
+        }
+
+        .experience .experience-middle {
+          transform-origin: center;
+          transform: unset;
+        }
+      `}</style>
+            <p className="leading-normal text-center font-normal text-base">
+              Every preorder in our platform will be Transferable,Tradable and
+              Verifiable before it expires.
+            </p>
           </div>
-          <style jsx>{`
-            .experience {
-              position: relative;
-              width: 100%;
-              height: 100%;
-              z-index: 10;
-              text-align: center;
-            }
-
-            .experience .experience-middle {
-              transform-origin: center;
-              transform: unset;
-            }
-          `}</style>
-          <p className="leading-normal text-center font-normal text-base">
-            Every preorder in our platform will be Transferable,Tradable and
-            Verifiable before it expires.
-          </p>
-        </div>
-
-        <section className="panel red"></section>
-
-        <section className="panel red">
           <div className="bg-white flex items-center md:flex-row flex-col p-8 justify-center overflow-hidden relative mx-auto max-w-7xl">
             {/* <img
             className="pointer-events-none absolute md:block hidden top-0 opacity-10 h-full	w-full"
@@ -1122,177 +1074,177 @@ function Home() {
               </div>
             </div>
           </div>
+          <div className="mt-20 flex justify-center border-custome overflow-hidden relative mx-auto text-center max-w-7xl"></div>
         </section>
+        {/* BOOK EARLY SECTION */}
 
-        <div className="mt-20 flex justify-center border-custome overflow-hidden relative mx-auto text-center max-w-7xl"></div>
-      </section>
-      {/* BOOK EARLY SECTION */}
-
-      {/* TRADE TO EARN SECTION */}
-      <section className="lastContainer pane pane-2 bg-section-background-color pt-8 pb-20 trade-to-earn-wrapper">
-        <div className="md:w-1/2 mx-auto mb-12 overflow-hidden relative">
-          {/* <h4 className="text-xxl text-center mb-4 font-bold text-white">
+        {/* TRADE TO EARN SECTION */}
+        <section className="pane pane-2 bg-section-background-color py-20 trade-to-earn-wrapper">
+          <div className="md:w-1/2 mx-auto mb-12 overflow-hidden relative">
+            <h4 className="text-xxl text-center mb-4 font-bold text-white">
               Trade to Earn before Expire
             </h4>
             <p className="leading-normal text-center font-normal text-base">
               Every preorder in our platform will be Transferable,Tradable and
               Verifiable before it expires.
-            </p> */}
-        </div>
-        <div className="flex-wrap md:flex-nowrap flex overflow-hidden relative mx-auto text-center max-w-7xl">
-          {/* Carousel Item 1 */}
-          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"} className="h-full block">
-              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
-                <div className="image-wrapper relative">
-                  <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
-                    #Real_Estate
-                  </div>
-                  <img src="./TG1.png" alt="" />
-                </div>
-                <div className="p-5 relative title-wrapper h-full bg-white">
-                  <img
-                    className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
-                    src="./expires-banner.png"
-                    alt=""
-                  />
-                  <div className="flex mb-5 mt-margin-minus-40 items-end">
-                    <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./century.png" alt="" />
-                    </div>
-                    <div className="right-title-wrapper">
-                      <h4 className="text-black font-bold text-xl">
-                        Century 21 Legacy
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="mb-5 description">
-                    <p className="text-start text-black text-sm	line-clamp-1">
-                      Iphone 17 pro max in our platform will be transferable,
-                      tradable and verifiable before it expires.
-                    </p>
-                  </div>
-                  <div className="mb-5 price-wrapper">
-                    <h6 className="font-400 text-start text-black text-sm">
-                      Price:{" "}
-                      <span className="text-primary-color font-semibold text-xl">
-                        $1100
-                      </span>
-                    </h6>
-                  </div>
-                  <div
-                    className="text-black  flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
-                    href={"#"}
-                  >
-                    Buy Now
-                  </div>
-                </div>
-              </div>
-            </Link>
+            </p>
           </div>
-          {/* Carousel Item 2 */}
-          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"} className="h-full block">
-              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
-                <div className="image-wrapper relative">
-                  <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
-                    #Real_Estate
-                  </div>
-                  <img src="./TG2.png" alt="" />
-                </div>
-                <div className="p-5 relative title-wrapper h-full bg-white">
-                  <img
-                    className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
-                    src="./expires-banner.png"
-                    alt=""
-                  />
-                  <div className="flex mb-5 mt-margin-minus-40 items-end">
-                    <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./liz.png" alt="" />
+          <div className="flex-wrap md:flex-nowrap flex overflow-hidden relative mx-auto text-center max-w-7xl">
+            {/* Carousel Item 1 */}
+            <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
+              <Link href={"#"} className="h-full block">
+                <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
+                  <div className="image-wrapper relative">
+                    <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
+                      #Real_Estate
                     </div>
-                    <div className="right-title-wrapper">
-                      <h4 className="text-black font-bold text-xl">
-                        Liz Moore Associates LLC
-                      </h4>
+                    <img src="./TG1.png" alt="" />
+                  </div>
+                  <div className="p-5 relative title-wrapper h-full bg-white">
+                    <img
+                      className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
+                      src="./expires-banner.png"
+                      alt=""
+                    />
+                    <div className="flex mb-5 mt-margin-minus-40 items-end">
+                      <div className="h-14 me-4 w-14 left-logo-wrapper">
+                        <img src="./century.png" alt="" />
+                      </div>
+                      <div className="right-title-wrapper">
+                        <h4 className="text-black font-bold text-xl">
+                          Century 21 Legacy
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="mb-5 description">
+                      <p className="text-start text-black text-sm	line-clamp-1">
+                        Iphone 17 pro max in our platform will be transferable,
+                        tradable and verifiable before it expires.
+                      </p>
+                    </div>
+                    <div className="mb-5 price-wrapper">
+                      <h6 className="font-400 text-start text-black text-sm">
+                        Price:{" "}
+                        <span className="text-primary-color font-semibold text-xl">
+                          $1100
+                        </span>
+                      </h6>
+                    </div>
+                    <div
+                      className="text-black  flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                      href={"#"}
+                    >
+                      Buy Now
                     </div>
                   </div>
-                  <div className="mb-5 description">
-                    <p className="text-start text-black text-sm	line-clamp-1">
-                      The ultimate mixed-reality headset for a new era of
-                      immersive experiences.
-                    </p>
+                </div>
+              </Link>
+            </div>
+            {/* Carousel Item 2 */}
+            <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
+              <Link href={"#"} className="h-full block">
+                <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
+                  <div className="image-wrapper relative">
+                    <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
+                      #Real_Estate
+                    </div>
+                    <img src="./TG2.png" alt="" />
                   </div>
-                  <div className="mb-5 price-wrapper">
-                    <h6 className="font-400 text-start text-black text-sm">
-                      Price:{" "}
-                      <span className="text-primary-color font-semibold text-xl">
-                        $1100
-                      </span>
-                    </h6>
-                  </div>
-                  <div
-                    className="text-black  flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
-                    href={"#"}
-                  >
-                    Buy Now
+                  <div className="p-5 relative title-wrapper h-full bg-white">
+                    <img
+                      className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
+                      src="./expires-banner.png"
+                      alt=""
+                    />
+                    <div className="flex mb-5 mt-margin-minus-40 items-end">
+                      <div className="h-14 me-4 w-14 left-logo-wrapper">
+                        <img src="./liz.png" alt="" />
+                      </div>
+                      <div className="right-title-wrapper">
+                        <h4 className="text-black font-bold text-xl">
+                          Liz Moore Associates LLC
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="mb-5 description">
+                      <p className="text-start text-black text-sm	line-clamp-1">
+                        The ultimate mixed-reality headset for a new era of
+                        immersive experiences.
+                      </p>
+                    </div>
+                    <div className="mb-5 price-wrapper">
+                      <h6 className="font-400 text-start text-black text-sm">
+                        Price:{" "}
+                        <span className="text-primary-color font-semibold text-xl">
+                          $1100
+                        </span>
+                      </h6>
+                    </div>
+                    <div
+                      className="text-black  flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                      href={"#"}
+                    >
+                      Buy Now
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
+            {/* Carousel Item 3 */}
+            <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
+              <Link href={"#"} className="h-full block">
+                <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
+                  <div className="image-wrapper relative">
+                    <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
+                      #Real_Estate
+                    </div>
+                    <img src="./TG3.png" alt="" />
+                  </div>
+                  <div className="p-5 relative title-wrapper h-full bg-white">
+                    <img
+                      className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
+                      src="./expires-banner.png"
+                      alt=""
+                    />
+                    <div className="flex mb-5 mt-margin-minus-40 items-end">
+                      <div className="h-14 me-4 w-14 left-logo-wrapper">
+                        <img src="./one-small.png" alt="" />
+                      </div>
+                      <div className="right-title-wrapper">
+                        <h4 className="text-black font-bold text-xl">
+                          Realty One Group Prestige
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="mb-5 description">
+                      <p className="text-start text-black text-sm	line-clamp-1">
+                        The flagship smartphone with cutting-edge performance
+                        and stunning design.
+                      </p>
+                    </div>
+                    <div className="mb-5 price-wrapper">
+                      <h6 className="font-400 text-start text-black text-sm">
+                        Price:{" "}
+                        <span className="text-primary-color font-semibold text-xl">
+                          $1100
+                        </span>
+                      </h6>
+                    </div>
+                    <div
+                      className="text-black flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
+                      href={"#"}
+                    >
+                      Buy Now
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
-          {/* Carousel Item 3 */}
-          <div className="px-2 md:mb-0 mb-4 carousel-item-wrapper">
-            <Link href={"#"} className="h-full block">
-              <div className="rounded-lg h-full overflow-hidden before-expire-card-wrapper">
-                <div className="image-wrapper relative">
-                  <div className="image-batch-wrapper top-3 left-3 bg-primary-color text-black font-bold text-12 w-fit rounded px-2 py-1 absolute">
-                    #Real_Estate
-                  </div>
-                  <img src="./TG3.png" alt="" />
-                </div>
-                <div className="p-5 relative title-wrapper h-full bg-white">
-                  <img
-                    className="pointer-events-none absolute top-0 opacity-30 h-full w-full left-0 top-0"
-                    src="./expires-banner.png"
-                    alt=""
-                  />
-                  <div className="flex mb-5 mt-margin-minus-40 items-end">
-                    <div className="h-14 me-4 w-14 left-logo-wrapper">
-                      <img src="./one-small.png" alt="" />
-                    </div>
-                    <div className="right-title-wrapper">
-                      <h4 className="text-black font-bold text-xl">
-                        Realty One Group Prestige
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="mb-5 description">
-                    <p className="text-start text-black text-sm	line-clamp-1">
-                      The flagship smartphone with cutting-edge performance and
-                      stunning design.
-                    </p>
-                  </div>
-                  <div className="mb-5 price-wrapper">
-                    <h6 className="font-400 text-start text-black text-sm">
-                      Price:{" "}
-                      <span className="text-primary-color font-semibold text-xl">
-                        $1100
-                      </span>
-                    </h6>
-                  </div>
-                  <div
-                    className="text-black flex w-full items-center text-center justify-center font-normal rounded-full bg-primary-color px-2 md:px-8 py-2 md:px-8"
-                    href={"#"}
-                  >
-                    Buy Now
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-      {/* TRADE TO EARN SECTION */}
+        </section>
+        {/* TRADE TO EARN SECTION */}
+      </div>
+      {/* SLIDE SCROLL SECTION */}
 
       <Footer />
     </>

@@ -53,7 +53,7 @@ p {
   color: #d1d2d4;
 }
 
-.card-bottom-section h5{
+.card-bottom-section h5 {
   font-family: "font-500";
 }
 
@@ -150,11 +150,11 @@ p {
   /* background: rgba(255, 255, 255, 0.1); */
 }
 
-.card-bottom-section .text-primary-color{
+.card-bottom-section .text-primary-color {
   color: rgb(2, 204, 168);
 }
 
-.card-bottom-section .bg-primary-color{
+.card-bottom-section .bg-primary-color {
   background-color: rgb(2, 204, 168);
 }
 
@@ -288,3 +288,36 @@ nav .bg-navbar-1 {
   right: 0;
   display: none;
 } */
+
+.sticky-header {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sticky-header.visible {
+  opacity: 1;
+}
+
+.sticky-header.hidden {
+  opacity: 0;
+}
+
+@media (max-width: 1280px) {
+  .sticky-header.hidden {
+    display: none;
+  }
+
+  #stickyDiv {
+    display: none !important;
+  }
+}
+
+.red {
+  background-color: #1b2027;
+}
